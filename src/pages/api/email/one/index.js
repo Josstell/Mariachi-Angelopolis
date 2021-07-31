@@ -48,7 +48,11 @@ const handler = (req, res) => {
 
   if (req.method === 'POST') {
     const msg = {
-      to: ['mariachiangelopolisdepuebla@gmail.com', req.body.email], // Change to your recipient
+      to: [
+        'mariachiangelopolisdepuebla@gmail.com',
+        'admin@mariachiangelopolis.com',
+        req.body.email,
+      ], // Change to your recipient
       from: 'Mariachi Angelopolis - informes <informes@mariachiangelopolis.com>', // Change to your verified sender
       subject: dataSend.subjectDina,
       html: 'hola',
