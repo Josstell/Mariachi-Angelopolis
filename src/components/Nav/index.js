@@ -34,11 +34,11 @@ function Nav({ light }) {
       <Link href="/">
         <LogoContainer>
           <Image
-            src="/Logotipo_Mesa_de_trabajo.png"
+            src="/mariachiangelopolis.png"
             alt="Mariachon inicio"
             width={202}
             height={112}
-            quality={50}
+            quality={70}
             placeholder="blur"
             blurDataURL={`data:image/svg+xml;base64,${toBase64(
               shimmer(202, 112)

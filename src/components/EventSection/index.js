@@ -135,7 +135,7 @@ const EventSection = ({ data }) => (
           alt={data[0].backgroundImage.name}
           layout="fill"
           objectFit="cover"
-          quality={10}
+          quality={50}
           placeholder="blur"
           blurDataURL={`data:image/svg+xml;base64,${toBase64(
             shimmer('100%', '100%')

@@ -9,7 +9,8 @@ export const paginaInicio = {
 
   header: {
     backgroundImage: {
-      url: 'https://drive.google.com/uc?id=1zALeXyYGIl_sKshsiPcYL8-02Si1NjzQ',
+      // url: 'https://drive.google.com/uc?id=1zALeXyYGIl_sKshsiPcYL8-02Si1NjzQ',
+      url: '/images/inicio/MariachisAngelopolisIncio.png',
       name: 'Mariachi Angelopólis', // alt para SEO
     },
     title: 'Mariachi Angelópolis',
@@ -126,7 +127,8 @@ export const paginaNosotros = {
 
   header: {
     backgroundImage: {
-      url: 'https://drive.google.com/uc?id=1mxKWWApbPQFHoDrytxHTFaEwuO-tsW3q',
+      // url: 'https://drive.google.com/uc?id=1mxKWWApbPQFHoDrytxHTFaEwuO-tsW3q',
+      url: '/images/nosotros/MariachiAngelopolisNosotros.png',
       name: 'Mariachi Angelopólis', // alt para SEO
     },
     title: 'Mariachi Angelópolis',
@@ -171,7 +173,9 @@ export const paginaContacto = {
 
   header: {
     backgroundImage: {
-      url: 'https://drive.google.com/uc?id=1QnLLDgmRtFxE_V679cOxwCz8w5Gq0qVO',
+      // url: 'https://drive.google.com/uc?id=1QnLLDgmRtFxE_V679cOxwCz8w5Gq0qVO',
+      url: '/images/contacto/contrataciondemariachispuebla.png',
+
       name: 'Mariachi Angelopólis', // alt para SEO
     },
     title: '¡Mantengámonos en contacto!',

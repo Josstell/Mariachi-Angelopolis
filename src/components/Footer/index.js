@@ -141,7 +141,7 @@ const Footer = () => (
               alt="Mariachon inicio"
               width={212}
               height={100}
-              quality={50}
+              quality={70}
               placeholder="blur"
               blurDataURL={`data:image/svg+xml;base64,${toBase64(
                 shimmer(202, 112)

@@ -60,7 +60,7 @@ const SectionFullIn = ({ data }) => (
       alt={data.backgroundImage.name}
       layout="fill"
       objectFit="cover"
-      quality={10}
+      quality={70}
       placeholder="blur"
       blurDataURL={`data:image/svg+xml;base64,${toBase64(
         shimmer('100%', '100%')
