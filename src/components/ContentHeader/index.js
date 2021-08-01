@@ -94,16 +94,18 @@ const ButtonQuery = styled(AButtonProps)`
   width: 24%;
   height: 8%;
   font-weight: 400;
+  padding-top: 5px;
 
   @media only screen and (max-width: 1024px) {
     font-size: 24px;
     width: 30%;
-    height: 13%;
+    height: 7%;
   }
   @media only screen and (max-width: 600px) {
     font-size: 25px;
     width: 60%;
     height: 10%;
+    padding-top: 1.8vh;
   }
 `
 const Span = styled.span`
