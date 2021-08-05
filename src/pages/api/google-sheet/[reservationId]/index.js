@@ -1,4 +1,4 @@
-import { callApiGoogleSheet } from '@helpers/lib/index'
+import { callApiGoogleSheet } from '../../../../helpers/index'
 
 const { SPREADSHEET_ID_MARIACHON } = process.env
 const { SHEET_ID } = process.env
