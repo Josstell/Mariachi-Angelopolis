@@ -11,6 +11,8 @@ const handlerGoogle = async (req, res) => {
 
   const { reservation, spreadSheetId, sheetIndex } = req.body
 
+  console.log('Data !!! ', req.body)
+
   const reservationUpdate = reservation
 
   const options = {
