@@ -1,6 +1,9 @@
 import { v4 as uuidv4 } from 'uuid'
 import { callApiGoogleSheet } from '../../../../helpers/index'
 
+const { SPREADSHEET_ID_LOCAL } = process.env
+const { SHEET_ID } = process.env
+
 const handlerGoogle = async (req, res) => {
   if (req.method !== 'POST') {
     return res.status(400).json({ error: 'Method not allowed' })
@@ -17,7 +20,7 @@ const handlerGoogle = async (req, res) => {
 
   if (req.method === 'POST') {
     try {
-      const { sheet } = await callApiGoogleSheet()
+      const { sheet } = await callApiGoogleSheet(SPREADSHEET_ID_LOCAL, SHEET_ID)
 
       const clientDetails = {
         fecha_creacion: date.toLocaleDateString('es-MX', options),
