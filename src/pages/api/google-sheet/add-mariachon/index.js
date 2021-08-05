@@ -1,14 +1,13 @@
 import { callApiGoogleSheet } from '../../../../helpers/index'
 
-const { SPREADSHEET_ID_MARIACHON } = process.env
-const { SHEET_ID } = process.env
-
 const handlerGoogle = async (req, res) => {
   if (req.method !== 'POST') {
     return res.status(400).json({ error: 'Method not allowed' })
   }
 
-  const reservationUpdate = req.body
+  const { reservation, spreadSheetId, sheetIndex } = req.body
+
+  const reservationUpdate = reservation
 
   const options = {
     weekday: 'long',
@@ -22,10 +21,7 @@ const handlerGoogle = async (req, res) => {
 
   if (req.method === 'POST') {
     try {
-      const { sheet } = await callApiGoogleSheet(
-        SPREADSHEET_ID_MARIACHON,
-        SHEET_ID
-      )
+      const { sheet } = await callApiGoogleSheet(spreadSheetId, sheetIndex)
 
       const reservationDetails = {
         fecha_creacion: creado.toLocaleDateString('es-MX', options),

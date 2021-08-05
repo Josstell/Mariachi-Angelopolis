@@ -1,8 +1,7 @@
 import { v4 as uuidv4 } from 'uuid'
 import { callApiGoogleSheet } from '../../../../helpers/index'
 
-const { SPREADSHEET_ID_LOCAL } = process.env
-const { SHEET_ID } = process.env
+const { SPREADSHEET_ID_LOCAL, SHEET_ID } = process.env
 
 const handlerGoogle = async (req, res) => {
   if (req.method !== 'POST') {

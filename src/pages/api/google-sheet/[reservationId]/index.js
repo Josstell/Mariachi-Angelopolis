@@ -1,8 +1,5 @@
 import { callApiGoogleSheet } from '../../../../helpers/index'
 
-const { SPREADSHEET_ID_MARIACHON } = process.env
-const { SHEET_ID } = process.env
-
 const handlerGoogle = async (req, res) => {
   const {
     query: { reservationId },
@@ -12,7 +9,10 @@ const handlerGoogle = async (req, res) => {
     return res.status(400).json({ error: 'Method not allowed' })
   }
 
-  const reservationUpdate = req.body
+  const { reservation, spreadSheetId, sheetIndex } = req.body
+
+  const reservationUpdate = reservation
+
   const options = {
     weekday: 'long',
     year: 'numeric',
@@ -24,8 +24,8 @@ const handlerGoogle = async (req, res) => {
     let getReservationById = []
     try {
       const { sheetGoogle } = await callApiGoogleSheet(
-        SPREADSHEET_ID_MARIACHON,
-        SHEET_ID
+        spreadSheetId,
+        sheetIndex
       )
       getReservationById = await sheetGoogle.filter(
         (reser) => reser.reservationId === reservationId
