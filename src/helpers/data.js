@@ -89,7 +89,8 @@ export const paginaInicio = {
           '8 Elementos',
           'Transporte ciudad de Puebla y Cholula',
         ],
-        price: 3500,
+        price:
+          'Nuestro equipo de ventas se comunicara con usted en breve, gracias...',
       },
       {
         slug: 'serenata',
@@ -99,7 +100,8 @@ export const paginaInicio = {
           '8 Elementos',
           'Transporte ciudad de Puebla y Cholula',
         ],
-        price: 3000,
+        price:
+          'Nuestro equipo de ventas se comunicara con usted en breve, gracias...',
       },
       {
         slug: 'contrato',
@@ -109,7 +111,8 @@ export const paginaInicio = {
           '8 Elementos',
           'Transporte ciudad de Puebla y Cholula',
         ],
-        price: 15000,
+        price:
+          'Nuestro equipo de ventas se comunicara con usted en breve, gracias...',
       },
     ],
     buttonText: 'Informes',
