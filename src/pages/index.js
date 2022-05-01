@@ -1,3 +1,4 @@
+/* eslint-disable react/self-closing-comp */
 import Head from 'next/head'
 import { useSelector, useDispatch } from 'react-redux'
 
@@ -35,6 +36,7 @@ const Index = ({ data, urlDomain, recaptchaRef }) => {
           name="google-site-verification"
           content="bgZ6zL07dTTdxAkybG0PAFhGj5ArxFBtSaff-orltqk"
         />
+
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header urlImage={header.backgroundImage} image light>
@@ -49,10 +51,8 @@ const Index = ({ data, urlDomain, recaptchaRef }) => {
       <Space />
       <SectionFull data={sectionFull} />
       <Space />
-
       <EventSection data={eventSection} />
       <Space />
-
       <Services data={services} recaptchaRef={recaptchaRef} />
       <Space />
     </>

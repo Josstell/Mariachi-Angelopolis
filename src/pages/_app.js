@@ -4,6 +4,8 @@ import { Provider } from 'react-redux'
 import { useStore } from '../redux/store'
 import Head from 'next/head'
 
+import Script from 'next/script'
+
 import { ThemeProvider } from 'styled-components'
 import GlobalStyle from '../styles/global'
 import * as theme from '../config/theme'
@@ -21,6 +23,21 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <Provider store={store}>
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+      />
+
+      <Script strategy="lazyOnload">
+        {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+                    page_path: window.location.pathname,
+                    });
+                `}
+      </Script>
       <Head>
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
