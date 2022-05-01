@@ -165,13 +165,13 @@ const MenuHam = ({ light }) => (
           <Link href="/">Inicio</Link>
         </li>
         <li>
-          <Link href="/about">
+          <Link href="/nosotros">
             <a>Nosotros</a>
           </Link>
         </li>
 
         <li>
-          <Link href="/contact">Contáctanos</Link>
+          <Link href="/contactanos">Contáctanos</Link>
         </li>
       </ul>
     </MenuToogle>

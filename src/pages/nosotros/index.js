@@ -19,6 +19,10 @@ const index = ({ data }) => {
         <title>{headSEO.title}</title>
         <meta name={headSEO.meta.name} content={headSEO.meta.content} />
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="google-site-verification"
+          content="bgZ6zL07dTTdxAkybG0PAFhGj5ArxFBtSaff-orltqk"
+        />
       </Head>
       <Header urlImage={header.backgroundImage} image objectPos="right bottom">
         <ContentHeader

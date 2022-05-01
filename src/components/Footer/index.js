@@ -189,13 +189,13 @@ const Footer = () => (
           </Link>
         </div>
         <div className="pointer">
-          <Link href="/about">
+          <Link href="/nosotros">
             <AddressH3 marginZero>Nosotros</AddressH3>
           </Link>
         </div>
 
         <div className="pointer">
-          <Link href="/contact">
+          <Link href="/contactanos">
             <AddressH3 marginZero>Contactanos</AddressH3>
           </Link>
         </div>
