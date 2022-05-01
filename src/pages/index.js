@@ -31,6 +31,10 @@ const Index = ({ data, urlDomain, recaptchaRef }) => {
       <Head>
         <title>{headSEO.title}</title>
         <meta name={headSEO.meta.name} content={headSEO.meta.content} />
+        <meta
+          name="google-site-verification"
+          content="bgZ6zL07dTTdxAkybG0PAFhGj5ArxFBtSaff-orltqk"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header urlImage={header.backgroundImage} image light>
