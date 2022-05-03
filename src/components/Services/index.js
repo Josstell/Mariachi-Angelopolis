@@ -485,7 +485,7 @@ const Services = ({ data, recaptchaRef }) => {
                 <TitleH3>{serv.title}</TitleH3>
                 <ul>
                   <li>{serv.details[0]}</li>
-                  <li>{serv.details[1]}</li>
+                  {/* <li>{serv.details[1]}</li> */}
                   <li>{serv.details[2]}</li>
                 </ul>
 
