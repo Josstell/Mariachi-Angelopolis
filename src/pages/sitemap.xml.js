@@ -1,29 +1,32 @@
-import * as fs from 'fs'
+// import * as fs from 'fs'
 
 const Sitemap = () => null
 
 export const getServerSideProps = async ({ res }) => {
   const BASE_URL = process.env.DOMAIN_URL
 
-  const staticPaths = fs
-    .readdirSync('pages')
-    .filter(
-      (staticPage) =>
-        ![
-          'api',
-          '_app.js',
-          '_document.js',
-          '_error.js',
-          '404.js',
-          'index.js',
-          'sitemap.xml.js',
-        ].includes(staticPage)
-    )
-    .map((staticPagePath) => `${BASE_URL}/${staticPagePath}`)
+  //   const staticPaths = fs
+  //     .readdirSync('pages')
+  //     .filter(
+  //       (staticPage) =>
+  //         ![
+  //           'api',
+  //           '_app.js',
+  //           '_document.js',
+  //           '_error.js',
+  //           '404.js',
+  //           'index.js',
+  //           'sitemap.xml.js',
+  //         ].includes(staticPage)
+  //     )
+  //     .map((staticPagePath) => `${BASE_URL}/${staticPagePath}`)
 
-  const allPaths = [`${BASE_URL}/`, ...staticPaths]
+  const allPaths = [
+    `${BASE_URL}/`,
+    `${BASE_URL}/contactanos`,
+    `${BASE_URL}/nosotros`,
+  ]
 
-  console.log('directorio:  ', __dirname)
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       ${allPaths
