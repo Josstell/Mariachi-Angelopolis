@@ -6,7 +6,7 @@ export const getServerSideProps = async ({ res }) => {
   const BASE_URL = process.env.DOMAIN_URL
 
   const staticPaths = fs
-    .readdirSync('./src/pages')
+    .readdirSync('pages')
     .filter(
       (staticPage) =>
         ![
@@ -23,6 +23,7 @@ export const getServerSideProps = async ({ res }) => {
 
   const allPaths = [`${BASE_URL}/`, ...staticPaths]
 
+  console.log('directorio:  ', __dirname)
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       ${allPaths
