@@ -1,9 +1,16 @@
 export const paginaInicio = {
   headSEO: {
-    title: 'Mariachi Angelopolis',
+    title: 'Mariachis Angelopolis en Puebla y Cholula',
     meta: {
-      name: 'Mariachi Angelopolis',
-      content: 'Calidad y profesionalismo en cada uno de nuestros eventos.',
+      name: 'Mariachis Angelopolis en Puebla y Cholula',
+      description:
+        'Mariachis en Puebla y Cholula te ofrecemos profesionalismo, experiencia, juventud, y presentación musical. Compruébelo por usted mismo!!',
+
+      og_title: 'Mariachis Angelopolis en Puebla y Cholula ',
+      og_description:
+        'Mariachis en Puebla y Cholula te ofrecemos profesionalismo, experiencia, juventud, y presentación musical.',
+      url: 'http://www.mariachiangelopolis.com/',
+      keywords: 'mariachis, mariachi, Puebla, cholula, Angelopolis, serenatas',
     },
   },
 
@@ -11,10 +18,10 @@ export const paginaInicio = {
     backgroundImage: {
       // url: 'https://drive.google.com/uc?id=1zALeXyYGIl_sKshsiPcYL8-02Si1NjzQ',
       url: '/images/inicio/MariachisAngelopolisIncio.png',
-      name: 'Mariachi Angelopólis', // alt para SEO
+      name: 'Mariachis Angelopolis en Puebla y Cholula', // alt para SEO
     },
-    title: 'Mariachi Angelópolis',
-    text: 'Dale gala y emoción a tus eventos con la mejor música popular mexicana',
+    title: 'Mariachi Angelópolis en Puebla y Cholula',
+    text: 'Servicio de mariachis en Puebla y Cholula. Dale gala y emoción a tus eventos con la mejor música popular mexicana.',
     textButton: 'Informes',
   },
 
@@ -24,7 +31,7 @@ export const paginaInicio = {
         url: 'https://drive.google.com/uc?id=1tAuCfpGMG1_lz_oBBoWYZp1k7j-McKiL',
         name: 'Mariachon inicio', /// /alt para SEO
       },
-      text: 'Mariachis en Puebla y Cholula, se esfuerzan por brindarle un mejor servicio y profesionalismo.',
+      text: 'Nuestro equipo de mariachis se esfuerzan por brindarle un mejor servicio y profesionalismo.',
     },
     {
       backgroundImage: {
@@ -43,24 +50,24 @@ export const paginaInicio = {
       },
       title: 'SERENATAS',
       text1:
-        'Conquista o declara tu amor a aquella persona tan especial que ha marcado la historia de tu vida.',
+        '”Conquista o declara tu amor llevando serenata con mariachis a aquella persona tan especial que ha marcado la historia de tu vida”',
       text2:
-        'Si tienes una novia o esposa no lo pienses más, tomala por sorpresa y demuestrale todo el amor que sientes por ella.',
+        '"Serenatas en la ciudad de Puebla o Cholula; no lo pienses más, toma  por sorpresa a tu novia y demuestrale todo el amor que sientes por ella"',
     },
     {
       title: 'CUMPLEAÑOS',
       text1:
-        'El aniversario del nacimiento de esa persona tan especial o organización. Celebrando con fiesta, música, comida, bebidas y muchos más... ',
+        '”Festeja con mariachis el cumpleaños de esa persona tan especial o organización. Celebrando con fiesta, música, comida, bebidas y muchos más... “',
       text2:
-        'En un ambiente familiar, social o de trabajo la música del mariachi es para interpretar y alegrar los corazones.',
+        ' “En un ambiente familiar, social o de trabajo la música del mariachi es para interpretar y alegrar los corazones” ',
     },
 
     {
       title: 'EMPRESAS',
       text1:
-        ' Un acto donde reúnes miembros de tu organización para celebrar un aniversario o logro de la empresa.',
+        '“Un acto donde reúnes miembros de tu organización para celebrar un aniversario o logro de la empresa”',
       text2:
-        ' La fiesta y convivencia entre colaboradores, un equipo unido es parte importante para la comunicación e interacción de la organización.',
+        ' “La fiesta y convivencia con mariachis entre colaboradores, un equipo unido es parte importante para la comunicación e interacción de la organización”',
     },
     {
       backgroundImage: {
@@ -69,9 +76,9 @@ export const paginaInicio = {
       },
       title: 'BODAS',
       text1:
-        'Para ese día tan especial, celebrando una nueva etapa de la vida y un proyecto en común con tu pareja.',
+        '"Para ese día tan especial, celebrando una nueva etapa de la vida y un proyecto en común con tu pareja"',
       text2:
-        'Una buena organización, vestuarios, invitados y por supuesto un buen mariachi con el profesionalismo que nos distingue.',
+        '"Una buena organización, vestuarios, invitados y por supuesto un buen mariachi con el profesionalismo que nos distingue"',
     },
   ],
   services: {
@@ -121,11 +128,15 @@ export const paginaInicio = {
 
 export const paginaNosotros = {
   headSEO: {
-    title: 'Mariachi Angelopolis, nosotros',
-    meta: {
-      name: 'Mariachi Angelopolis, nosotros',
-      content: 'Calidad y profesionalismo en cada uno de nuestros eventos.',
-    },
+    name: 'Precios de mariachis en puebla',
+    description:
+      'Mariachis profesionales en la ciudad de Puebla y Cholula que responden al precio que pagas por el servicio.',
+    og_title: 'Precios de mariachis en puebla | Mariachi Angelopolis',
+    og_description:
+      'Mariachis profesionales en la ciudad de Puebla y Cholula que responden al precio que pagas por el servicio.',
+    url: 'http://www.mariachiangelopolis.com/nosotros',
+    keywords:
+      'precio de mariachis, mariachi, Puebla, cholula, Angelopolis, serenatas',
   },
 
   header: {
@@ -134,8 +145,8 @@ export const paginaNosotros = {
       url: '/images/nosotros/MariachiAngelopolisNosotros.png',
       name: 'Mariachi Angelopólis', // alt para SEO
     },
-    title: 'Mariachi Angelópolis',
-    text: 'Mariachis profesionales en la ciudad de Puebla y Cholula que responden al precio que pagas por el servicio',
+    title: 'Mariachi Angelopolis | Mariachis en Puebla',
+    text: 'Precio de mariachis en Puebla',
     textButton: 'Contáctanos',
   },
 

@@ -26,7 +26,7 @@ const WrapperContent = styled.div`
   }
 `
 
-const TitleH1 = styled.h1`
+const TitleH1 = styled.h2`
   width: 100%;
   color: ${(props) => props.theme.mediumBlue};
   font-family: 'Helvetica Neue';
@@ -56,11 +56,12 @@ const TitleH1 = styled.h1`
     text-align: center;
   }
 `
-const TextProps = styled.p`
+const TextProps = styled.h1`
   width: 70%;
   color: ${(props) => props.theme.black};
   font-family: 'Helvetica Neue';
   font-size: 20px;
+  font-size: ${(props) => props.sizeText};
   font-weight: bold;
   margin: 0;
   padding-top: 2%;
@@ -128,6 +129,7 @@ const ContentHeader = ({
   text,
   textButton,
   textWidth,
+  sizeText,
   success,
   error,
 }) => (
@@ -135,7 +137,9 @@ const ContentHeader = ({
     {success?.message ? <Span>{success?.message}</Span> : null}
     {error?.errGral ? <Span color="red">{error.errGral}</Span> : null}
     <TitleH1>{title}</TitleH1>
-    <TextProps textWidth={textWidth}>{text}</TextProps>
+    <TextProps textWidth={textWidth} sizeText={sizeText}>
+      {text}
+    </TextProps>
     <ButtonQuery
       type="button"
       href={`https://wa.me/5212226768956?text=${messageWhats}`}

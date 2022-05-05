@@ -17,8 +17,18 @@ const index = ({ data }) => {
     <>
       <Head>
         <title>{headSEO.title}</title>
-        <meta name={headSEO.meta.name} content={headSEO.meta.content} />
         <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content={headSEO.desciption} />
+        <meta name="twitter:card" value="summary" />
+        <meta property="og:title" content={headSEO.og_title} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={headSEO.url} />
+        <meta
+          property="og:image"
+          content="https://www.mariachiangelopolis.com/images/nosotros/MariachiAngelopolisNosotros.png"
+        />
+        <meta property="og:description" content={headSEO.og_description} />
+        <meta name="keywords" content={headSEO.keywords} />
         <meta
           name="google-site-verification"
           content="bgZ6zL07dTTdxAkybG0PAFhGj5ArxFBtSaff-orltqk"
@@ -26,12 +36,13 @@ const index = ({ data }) => {
       </Head>
       <Header urlImage={header.backgroundImage} image objectPos="right bottom">
         <ContentHeader
-          textWidth="50%"
+          textWidth="70%"
           text={header.text}
           textButton={header.textButton}
           widthB="45%"
           heightB="50px"
           sizeTextButton="20px"
+          sizeText="50px"
         />
       </Header>
       <Space />

@@ -31,7 +31,18 @@ const Index = ({ data, urlDomain, recaptchaRef }) => {
     <>
       <Head>
         <title>{headSEO.title}</title>
-        <meta name={headSEO.meta.name} content={headSEO.meta.content} />
+        <meta name="description" content={headSEO.meta.description} />
+        <meta name="twitter:card" value="summary" />
+        <meta property="og:title" content={headSEO.meta.og_title} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={headSEO.meta.url} />
+        <meta
+          property="og:image"
+          content="https://www.mariachiangelopolis.com/images/inicio/MariachisAngelopolisIncio.png"
+        />
+        <meta property="og:description" content={headSEO.meta.og_description} />
+        <meta name="keywords" content={headSEO.meta.keywords} />
+
         <meta
           name="google-site-verification"
           content="bgZ6zL07dTTdxAkybG0PAFhGj5ArxFBtSaff-orltqk"
