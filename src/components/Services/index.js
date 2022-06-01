@@ -507,8 +507,8 @@ const Services = ({ data, recaptchaRef }) => {
         <div className="popup-inner">
           <div className="popup__photo">
             <img
-              src="https://images.unsplash.com/photo-1515224526905-51c7d77c7bb8?ixlib=rb-0.3.5&s=9980646201037d28700d826b1bd096c4&auto=format&fit=crop&w=700&q=80"
-              alt=""
+              src="/images/modal/mariachisenpuebla.jpg"
+              alt="Mariachis en Puebla"
             />
           </div>
           <div className="popup__text">
