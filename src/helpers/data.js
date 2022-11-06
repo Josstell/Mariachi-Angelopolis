@@ -20,7 +20,7 @@ export const paginaInicio = {
       url: '/images/inicio/MariachisAngelopolisIncio.png',
       name: 'Mariachis Angelopolis en Puebla y Cholula', // alt para SEO
     },
-    title: 'Mariachi Angelópolis en Puebla y Cholula',
+    title: 'Mariachi Angelópolis',
     text: 'Servicio de mariachis en Puebla y Cholula. Dale gala y emoción a tus eventos con la mejor música popular mexicana.',
     textButton: 'Informes',
   },
