@@ -161,7 +161,7 @@ const Footer = () => (
       <SectionColumn paddingLeft="15%">
         <IconsWrapper>
           <ImageMargin className="pointer">
-            <Link href="/">
+            <Link href="https://www.facebook.com/mariachonapp">
               <Image
                 src="/face.png"
                 alt="Mariachon inicio"
@@ -172,7 +172,7 @@ const Footer = () => (
             </Link>
           </ImageMargin>
           <div className="pointer">
-            <Link href="/">
+            <Link href="https://www.instagram.com/mariachonapp/">
               <Image
                 src="/instagram.png"
                 alt="Mariachon inicio"
